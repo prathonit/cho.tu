@@ -15,4 +15,4 @@ cho.tu is a url shortener made using PHP and MySql.
 Show your support by contributing to the repo. Feel free to contact @prathonit
 
 # **License:**
-MIT License. Use it any way.
+MIT License. Use it in any way.

@@ -1,0 +1,19 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+ErrorDocument 404 /shortn/404.php
+
+#DirectoryIndex Options +Indexes
+
+<FilesMatch ".(htaccess)">
+  order allow,deny
+  deny from all
+</FilesMatch>
+
+#Options +MultiViews
+
+IndexIgnore *

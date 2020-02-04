@@ -2,9 +2,9 @@
 cho.tu is a url shortener made using PHP and MySql.
 
 # **Features**:
-->Shortening of URLS into 5-6 letter short url path.
-->Real time tracking of hits i.e. the number of times the site has been visited with the shortened link.
-->Storing the last time the site was visited using the shortened link 
+* ->Shortening of URLS into 5-6 letter short url path.
+* ->Real time tracking of hits i.e. the number of times the site has been visited with the shortened link.
+* ->Storing the last time the site was visited using the shortened link 
 
 # **Screenshots:**
 ![Home page](https://raw.githubusercontent.com/prathonit/cho.tu/master/screenshots/home_page.PNG)

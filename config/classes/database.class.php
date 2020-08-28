@@ -5,14 +5,14 @@
 	class DB{ 
 		#connection to the database
 		public function connectionToDatabase(){	 
-			$database=new mysqli('localhost','prathonit','pwdpwd','shortn');
+			$database=new mysqli('localhost','pks','pwdpwd','chotu');
 			return $database;
 		}
 		#close connection to the database 
 		public function closeConnectionToDatabase($handle){
 			$handle->close();
 		}
-		#select from database according to the s_url extension returns array on successful query else retunrns false
+		#select from database according to the s_url extension returns array on successful query else returns false
 		public function selectFromDatabaseGetOUrl($s_url){
 			$query="SELECT * FROM urls WHERE s_url='{$s_url}' LIMIT 1";
 			$handle=$this->connectionToDatabase();
@@ -80,14 +80,9 @@
 		}
 		#insert new record into the database 
 		public function insertIntoDatabase($id,$o_url,$s_url,$last_visited){
-			$hits=1;
+			$hits=0;
 			$query="INSERT INTO urls (id,o_url,s_url,hits,last_visited) VALUES ('{$id}','{$o_url}','{$s_url}','{$hits}','{$last_visited}')";
 			$handle=$this->connectionToDatabase();
-			/*if ($result=$handle->query($query)){
-				return true;
-			} else{
-				return false;
-			}*/
 			if(mysqli_query($handle,$query)){
 				return true;
 			}

@@ -5,7 +5,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 
 
-ErrorDocument 404 /shortn/404.php
+ErrorDocument 404 /404.php
 
 #DirectoryIndex Options +Indexes
 

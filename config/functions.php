@@ -10,6 +10,9 @@
 		$database=new DB;
 		$handle=$database->connectionToDatabase();
 		$maxId=$database->selectFromDatabaseMaxId();
+		if ($maxId < 10000000) {
+			$maxId = 10000000;
+		}
 		$validId=$maxId+5;
 		return $validId;
 	}

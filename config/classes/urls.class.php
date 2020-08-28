@@ -1,7 +1,6 @@
 <?php
 	/*Written on 4th February 2020 by Prathmesh Srivastava*/
 	class Urls{
-
 		 function shortenUrl($urls){
 			$char="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 			$urlToShorten=$urls;
@@ -12,7 +11,7 @@
 				if ($n==0){
 					break;
 				}
-				$url=$url.$char[floor(fmod($number_id, $n))];
+				$url=$url.$char[floor(fmod($number_id, $n-1))];
 				$number_id=floor($number_id/$n);
 			}
 			return $url;

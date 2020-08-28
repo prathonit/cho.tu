@@ -16,7 +16,7 @@
 	<div id="mirror">
 		<center>
 			<h3>Your shortened url is : <br></h3>
-			<h4><a href="http://localhost/shortn/<?php echo $_GET['url'];?>">http://localhost/shortn/<?php echo $_GET['url'];?></a></h4>
+			<h4><a href="http://localhost/<?php echo $_GET['url'];?>">http://localhost/<?php echo $_GET['url'];?></a></h4>
 
 		<h1>Total hits <span class="label label-default"><?php echo $hits;?></span></h1>
 

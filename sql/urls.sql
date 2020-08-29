@@ -1,8 +1,0 @@
-CREATE TABLE `urls` (
-	`id` BIGINT NOT NULL,
-	`o_url` TEXT NOT NULL,
-	`s_url` VARCHAR(32) NOT NULL,
-	`hits` BIGINT NOT NULL DEFAULT '1',
-	`last_visited` VARCHAR(128) NOT NULL,
-	PRIMARY KEY (`s_url`)
-) ENGINE=InnoDB;

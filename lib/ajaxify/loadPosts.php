@@ -1,6 +1,9 @@
 <?php
 include_once '../config.php';
 session_start();
+if ($_SERVER["REQUEST_METHOD"]  != 'GET') {
+  die("USE GET METHOD"); 
+}
 $offset = sanitize_input($_REQUEST['offset']);
 $user_email = $_SESSION['user_email'];
 $feed = sanitize_input($_REQUEST['feed']);
